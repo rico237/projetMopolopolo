@@ -40,7 +40,7 @@ CREATE SEQUENCE auteur_seq START WITH 1 INCREMENT BY 1 MINVALUE 1 NOMAXVALUE;
 CREATE OR REPLACE TRIGGER nouveauAuteur 
 BEFORE INSERT ON AUTEUR
 FOR EACH ROW
-DECLARE
+
 BEGIN
   SELECT auteur_seq.NEXTVAL
   INTO   :new.ID#
@@ -215,7 +215,7 @@ END;
 
 
 
-----------------------INSERTIONS DES LIVRES--------------------------------
+-- ----------------------INSERTIONS DES LIVRES--------------------------------
 
 
 -- INSERT INTO LIVRES(IDAUTEUR,IDEDITEUR,IDCOLL,TITRE,DATE_ACHAT,PRIX)
