@@ -166,18 +166,27 @@ END;
 
 ---------------------INSERTION DES VALEURS DANS LES TABLES---------------------
 
-INSERT INTO AUTEUR(ID#,NOM_AUTEUR, PRENOM_AUTEUR,DATE_NAISSANCE)
-VALUES (auteur_seq.nextval,'ROWLING', 'JOANNE', to_date('17-12-1980','dd-mm-yyyy'));
+
+---------------------INSERTION DES AUTEURS-------------------------------------
 
 
+INSERT INTO AUTEUR(NOM_AUTEUR, PRENOM_AUTEUR,DATE_NAISSANCE)
+VALUES ('ROWLING', 'JOANNE', to_date('17-12-1980','dd-mm-yyyy'));
 
 
+INSERT INTO AUTEUR(NOM_AUTEUR, PRENOM_AUTEUR,DATE_NAISSANCE)
+VALUES ('TOLKIEN', 'JOHN RONALD REUEL', to_date('03-01-1892','dd-mm-yyyy'));
 
 
+INSERT INTO AUTEUR(NOM_AUTEUR, PRENOM_AUTEUR,DATE_NAISSANCE)
+VALUES ('VERNE', 'JULES GABRIEL', to_date('08-02-1828','dd-mm-yyyy'));
 
 
+-------------------------INSERTION DES EDITEURS---------------------------------
+
+INSERT INTO EDITEUR(NOM_EDIT,ADRESSE,VILLE, PAYS, TELEPHONE, MAIL)
+VALUES ('FOLIO','5 rue Gaston-Gallimard', 'PARIS', 'FRANCE','0149544200','catalogue@gallimard.fr');
 
 
-
-
-O
+INSERT INTO EDITEUR(NOM_EDIT,ADRESSE,VILLE, PAYS, TELEPHONE, MAIL)
+VALUES ('HATIER','8 rue d''Assas dans le VIe arrondissement', 'PARIS', 'FRANCE','0141236600',' infos@dunod.com');
