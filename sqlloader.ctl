@@ -1,6 +1,5 @@
-LOAD DATA
+LOAD DATA INFILE 'c:\app\cyril\oradata\CYRILBD\DATA\data.csv'
 TRUNCATE
-INFILE 'c:\app\cyril\oradata\CYRILBD\DATA\data.csv'
 INTO TABLE AUTEUR WHEN tab = 'AUTEUR'
 FIELDS TERMINATED BY "," OPTIONALLY ENCLOSED BY "'"
 ( tab FILLER char(6),
