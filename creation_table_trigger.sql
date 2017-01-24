@@ -234,8 +234,6 @@ END;
 -- INSERT INTO EDITEUR(NOM_EDIT,ADRESSE,VILLE, PAYS, TELEPHONE, MAIL)
 -- VALUES ('LIVRE DE POCHE','21 RUE DU MONTPARNASSE', 'PARIS', 'FRANCE','0123456789','contactldp@livredepoche.com');
 
--- INSERT INTO EDITEUR(NOM_EDIT,ADRESSE,VILLE, PAYS, TELEPHONE, MAIL)
--- VALUES ('LIVRE DE POCHE','21 RUE DU MONTPARNASSE', 'PARIS', 'FRANCE','0123456789','contactldp@livredepoche.com');
 
 -- INSERT INTO EDITEUR(NOM_EDIT,ADRESSE,VILLE, PAYS, TELEPHONE, MAIL)
 -- VALUES ('EYROLLES','61 boulevard Saint Germain', 'PARIS', 'FRANCE','0189452322','editeurs@editions-eyrolles.com');
@@ -402,4 +400,68 @@ END;
 
 -- INSERT INTO CATEGORIE(CAT_LIVRES,NOM_CATEGORIE)
 -- VALUES(11,'BD');
+
+
+-- ------------------------------------------INSERTIONS DES PRET -------------------------------------
+
+-- --HARRY POTTER  A LECOLE DES SORCIERS
+-- INSERT INTO PRET(ADH,REF_LIVRES,DATE_PRET,DATE_RETOUR_PRET,DATE_REEL_RETOUR)
+-- VALUES (2,1,to_date('24-01-2017','dd-mm-yyyy'),to_date('10-02-2017','dd-mm-yyyy'),to_date('27-01-2017','dd-mm-yyyy'));
+
+-- --HARRY POTTER EST LA CHAMBRE DES SECRETS
+-- INSERT INTO PRET(ADH,REF_LIVRES,DATE_PRET,DATE_RETOUR_PRET,DATE_REEL_RETOUR)
+-- VALUES (4,2,to_date('24-01-2017','dd-mm-yyyy'),to_date('10-02-2017','dd-mm-yyyy'),to_date('12-02-2017','dd-mm-yyyy'));
+
+-- --HARRY POTTER EST LORDRE DU PHOENIX 
+-- INSERT INTO PRET(ADH,REF_LIVRES,DATE_PRET,DATE_RETOUR_PRET,DATE_REEL_RETOUR)
+-- VALUES (4,3,to_date('24-01-2017','dd-mm-yyyy'),to_date('10-02-2017','dd-mm-yyyy'),to_date('10-02-2017','dd-mm-yyyy'));
+
+-- INSERT INTO PRET(ADH,REF_LIVRES,DATE_PRET,DATE_RETOUR_PRET,DATE_REEL_RETOUR)
+-- VALUES (9,4,to_date('24-01-2017','dd-mm-yyyy'),to_date('10-02-2017','dd-mm-yyyy'),to_date('23-01-2018','dd-mm-yyyy'));
+
+-- INSERT INTO PRET(ADH,REF_LIVRES,DATE_PRET,DATE_RETOUR_PRET,DATE_REEL_RETOUR)
+-- VALUES (1,5,to_date('26-01-2017','dd-mm-yyyy'),to_date('14-02-2017','dd-mm-yyyy'),to_date('10-02-2017','dd-mm-yyyy'));
+
+-- INSERT INTO PRET(ADH,REF_LIVRES,DATE_PRET,DATE_RETOUR_PRET,DATE_REEL_RETOUR)
+-- VALUES (6,6,to_date('04-03-2017','dd-mm-yyyy'),to_date('30-03-2017','dd-mm-yyyy'),to_date('16-05-2017','dd-mm-yyyy'));
+
+-- INSERT INTO PRET(ADH,REF_LIVRES,DATE_PRET,DATE_RETOUR_PRET,DATE_REEL_RETOUR)
+-- VALUES (8,7,to_date('28-01-2017','dd-mm-yyyy'),to_date('16-02-2017','dd-mm-yyyy'),to_date('08-02-2017','dd-mm-yyyy'));
+
+-- INSERT INTO PRET(ADH,REF_LIVRES,DATE_PRET,DATE_RETOUR_PRET,DATE_REEL_RETOUR)
+-- VALUES (3,8,to_date('29-01-2017','dd-mm-yyyy'),to_date('17-02-2017','dd-mm-yyyy'),to_date('16-02-2017','dd-mm-yyyy'));
+
+-- INSERT INTO PRET(ADH,REF_LIVRES,DATE_PRET,DATE_RETOUR_PRET,DATE_REEL_RETOUR)
+-- VALUES (5,9,to_date('04-03-2017','dd-mm-yyyy'),to_date('14-03-2017','dd-mm-yyyy'),to_date('10-03-2017','dd-mm-yyyy'));
+
+-- INSERT INTO PRET(ADH,REF_LIVRES,DATE_PRET,DATE_RETOUR_PRET,DATE_REEL_RETOUR)
+-- VALUES (7,10,to_date('03-03-2017','dd-mm-yyyy'),to_date('13-03-2017','dd-mm-yyyy'),to_date('07-03-2017','dd-mm-yyyy'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
