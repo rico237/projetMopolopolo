@@ -10,6 +10,10 @@ order by TABLESPACE_NAME;
 SELECT * 
 FROM sys.tab;
 
+SELECT table_name FROM all_tables 
+
+desc all_tables;
+
 --2) Pour lister les tablespaces de la base ainsi que leurs fichiers associés :
 
 -- je validee !!!! 
@@ -21,6 +25,10 @@ WHERE C.tablespace_Name(+) = A.tablespace_Name
 AND B.Tablespace_Name(+)= C.Tablespace_Name 
 ORDER BY A.TABLESPACE_NAME; 
 
+-- permet de lister les segments et leurs extensions de chacun des segment (tables ou indexes) de votre utilisateur
+select table_name 
+from dba_indexes
+group by table_name;
 
 -- voir les utilisateur 
 
@@ -36,3 +44,25 @@ REBUILD PARTITION = ALL WITH (
     DATA_COMPRESSION =  COLUMNSTORE ON PARTITIONS (4,5),  
     DATA COMPRESSION = COLUMNSTORE_ARCHIVE ON PARTITIONS (1,2,3)  
 ) ;  
+
+--- proposer 3 requete libres au choix de recherche d'objet dans le dictionnaire oracle
+
+-- Afficher toute les vues users 
+
+select *
+from dict 
+where table_name name LIKE '%USER_%'
+order by table_name;
+
+--(Affiche la version d'oracle)
+
+select * 
+from V$VERSION; 
+
+-- Classement des table par ordre croissans de colonnes 
+
+select table_name, count(*) as Nb_columns
+from user_tab_columns
+where table_name = 'LIVRES'
+group by table_name
+order by Nb_columns; 
