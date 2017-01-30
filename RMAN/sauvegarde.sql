@@ -1,4 +1,4 @@
-CONFIGURE CHANNEL DEVICE TYPE DISK FORMAT '%ORACLE_BASE%\oradata\orcl\backup\full_%u_%s_%p';
+CONFIGURE CHANNEL DEVICE TYPE DISK FORMAT '%ORACLE_BASE%\oradata\CYRILBD\backup\full_%u_%s_%p';
 SHUTDOWN IMMEDIATE;
 STARTUP MOUNT;
 configure controlfile autobackup on;
